@@ -13,14 +13,14 @@ export default function Header({ name }) {
     // </header>
     <header className="mt-10">
       <div className="bg-[#091339] rounded-r-full">
-        <h1 className="text-white font-bold text-4xl py-1 px-4">
+        <h1 className="text-white font-bold text-7xl py-1 px-4">
           SweetSwap
           <Link href="/">
             <Image
               src="/logo.png" // Ensure the logo.png is in your public folder
               alt="Logo"
-              width={100} // Set the width of the logo
-              height={100} // Set the height of the logo
+              width={150} // Set the width of the logo
+              height={150} // Set the height of the logo
               className="inline-block rounded-r-full" // Add inline-block to align it with text if needed
             />
           </Link>
