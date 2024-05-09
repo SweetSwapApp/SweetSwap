@@ -14,10 +14,21 @@ export default function Index({ posts, globalData }) {
       <SEO title={globalData.name} description={globalData.blogTitle} />
       <Header name={globalData.name} />
       <main className="w-full">
-        <h1 className="text-3xl lg:text-5xl text-center mb-12">
+        <div className="flex flex-col justify-center items-center">
+          <div className="h-[200px] w-[200px] rounded-full bg-[#091339] items-center justify-center flex flex-col mt-10">
+            <h1 className="text-white text-6xl font-bold">1289</h1>
+            <h1 className="text-white text-xl font-bold">KILOJOULES</h1>
+          </div>
+          <div className="flex items-center mt-10 gap-3 mx-2">
+            <button className="text-white bg-[#2f6a7c] w-[75px] h-[75px] rounded-full">Recipe</button>
+        <input type="text" className="border border-black rounded-3xl px-3 py-2 bg-[#091339] text-white"></input>
+        <button className="text-white bg-[#2f6a7c] w-[75px] h-[75px] rounded-full">Info</button>
+          </div>
+        </div>
+        {/* <h1 className="text-3xl lg:text-5xl text-center mb-12">
           {globalData.blogTitle}
-        </h1>
-        <ul className="w-full">
+        </h1> */}
+        {/* <ul className="w-full">
           {posts.map((post) => (
             <li
               key={post.filePath}
@@ -44,7 +55,7 @@ export default function Index({ posts, globalData }) {
               </Link>
             </li>
           ))}
-        </ul>
+        </ul> */}
       </main>
       <Footer copyrightText={globalData.footerText} />
       <GradientBackground
