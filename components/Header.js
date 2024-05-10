@@ -12,16 +12,16 @@ export default function Header({ name }) {
     //   </p>
     // </header>
     <header className="mt-10">
-      <div className="bg-[#091339] rounded-r-full">
-        <h1 className="text-white font-bold text-7xl py-1 px-4">
+      <div className="bg-[#091339] rounded-r-full w-[68%]">
+        <h1 className="text-white font-bold text-[7vw] tablet:text-[46px] pl-[5%]">
           SweetSwap
           <Link href="/">
             <Image
               src="/logo.png" // Ensure the logo.png is in your public folder
               alt="Logo"
-              width={150} // Set the width of the logo
-              height={150} // Set the height of the logo
-              className="inline-block rounded-r-full" // Add inline-block to align it with text if needed
+              width={300} // Set the width of the logo
+              height={300} // Set the height of the logo
+              className="inline-block rounded-r-full w-[30%]" // Add inline-block to align it with text if needed
             />
           </Link>
         </h1>

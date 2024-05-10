@@ -6,4 +6,9 @@ module.exports = {
   ],
   darkMode: 'class', // or 'media' or 'class'
   presets: [require('./utils/tailwind-preset')],
+  theme: {
+    screens: {
+      'tablet': '672px',
+    },
+  }
 };
